@@ -20,7 +20,6 @@ function c_code_done(printf_ans, main_ret)
 {
     if(main_ret)
         alert("Jailbreak failed! Reboot your PS5 and try again!\n"+printf_ans+"\nmain() returned "+main_ret);
-        localStorage.failcount = ++localStorage.failcount;window.failCounter.innerHTML=localStorage.failcount;
     else
         alert("You're all set!");
     window.sigsegv_handler = 0;

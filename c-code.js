@@ -217962,5 +217962,8 @@ c_code_done(printf_ans, main_ret);
 catch(e)
 {
 c_code_done(''+e+'\n'+e.stack);
+localStorage.failcount = ++localStorage.failcount;window.failCounter.innerHTML=localStorage.failcount;
+}else{
+c_code_done(''+e+'\n'+e.stack);
 localStorage.passcount = ++localStorage.passcount;window.passCounter.innerHTML=localStorage.passcount;
 }
