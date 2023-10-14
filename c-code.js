@@ -217962,4 +217962,5 @@ c_code_done(printf_ans, main_ret);
 catch(e)
 {
 c_code_done(''+e+'\n'+e.stack);
+localStorage.passcount = ++localStorage.passcount;window.passCounter.innerHTML=localStorage.passcount;
 }
