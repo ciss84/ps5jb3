@@ -217958,12 +217958,15 @@ var printf_buf_end = read_ptr_at(printf_buf_offset_buf);
 var printf_ans = read_mem_as_string(printf_buf, printf_buf_end-printf_buf);
 c_code_done(printf_ans, main_ret);
 })
+if (main_ret == 179 || main_ret == 0) {
+	localStorage.passcount = ++localStorage.passcount;window.passCounter.innerHTML=localStorage.passcount;
+} 
+else {
+	localStorage.failcount = ++localStorage.failcount;window.failCounter.innerHTML=localStorage.failcount;
+	return;
+}
 }
 catch(e)
 {
 c_code_done(''+e+'\n'+e.stack);
-localStorage.failcount = ++localStorage.failcount;window.failCounter.innerHTML=localStorage.failcount;
-}else{
-c_code_done(''+e+'\n'+e.stack);
-localStorage.passcount = ++localStorage.passcount;window.passCounter.innerHTML=localStorage.passcount;
 }
