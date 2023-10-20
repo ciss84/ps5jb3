@@ -1,10 +1,9 @@
 CACHE MANIFEST 
-# 2023-10-14:v38
+# 2023-10-20:v75
 
 CACHE: 
 c-code.js
 exploit.js
-henstuff.bin
 index.html
 jquery-2.2.4.min.js
 malloc.js
