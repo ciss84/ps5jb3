@@ -700,8 +700,9 @@ background-repeat: no-repeat;
   <script>
     UA = navigator.userAgent.substring(navigator.userAgent.indexOf("4.03 (") + 28, navigator.userAgent.indexOf(") Apple"));
     if (UA == "layStation 5/4.03") UA = "4.03";
+    if (UA == "layStation 5/4.50") UA = "4.50";	  
     if (UA == "layStation 5/5.50") UA = "5.50";
-    if (UA != "4.03" && UA != "5.50") alert("This Is For PS5 FW4.03 Only!");
+    if (UA != "4.03" && UA != "4.50" && UA != "5.50") alert("This Is For PS5 FW4.03/4.50 Only!");
     PS4fw.innerHTML = "" + UA + "";
   </script>
   <script>
